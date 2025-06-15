@@ -326,8 +326,8 @@ function showSubcategories(subcategories,parentCategory) {
             ? (sub === "cocktails" ? "Коктели"
                 : sub === "wines" ? "Вина"
                     : sub === "beers" ? "Пива"
-                        : sub === "softDrinks" ? "Негазирани пијалоци"
-                            : sub === "fizzyDrinks" ? "Газирани пијалоци"
+                        : sub === "soft Drinks" ? "Негазирани пијалоци"
+                            : sub === "fizzy Drinks" ? "Газирани пијалоци"
                                 : sub)
             : sub.charAt(0).toUpperCase() + sub.slice(1);
 
