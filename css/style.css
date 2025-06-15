@@ -4,12 +4,11 @@ html, body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
-    font-family: 'Inter', sans-serif;
-}
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;}
 
-/* Лого - да не го проширува екран и да се прилагодува */
+
 #logo {
-    width: 100%;       /* ширина до 100% од родителот */
+    width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: center;
@@ -19,23 +18,26 @@ html, body {
 #mainDiv {
     padding: 1rem;
     gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dropdown-toggle {
     border: none;
+    padding: 10px 16px;
+    font-size: 1rem;
 }
 
-.card, .wine-item {
-    background: linear-gradient(135deg, #ffffff, #f0f0f5);
+.card, .subCategory-item {
+    background: linear-gradient(135deg, #ffffff, #dfdfe5);
     border: 2px solid #3b2e1c; /* темно кафеава рамка за добар контраст */
     border-radius: 12px;
     padding: 18px 22px;
     margin-bottom: 20px;
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     box-shadow: 0 6px 14px rgba(59, 46, 28, 0.3);
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: none; /* отстранет hover/transform */
+    transition: none;
     display: flex;
     flex-direction: column;
 }
@@ -47,7 +49,7 @@ html, body {
     border-radius: 12px 12px 0 0;
 }
 
-.card-title, .wine-title {
+.card-title, .subCategory-title {
     font-weight: 800;
     font-size: 1.2rem;
     color: #3b2e1c;
@@ -57,7 +59,7 @@ html, body {
     text-align: center;
 }
 
-.card-text, .wine-description {
+.card-text, .subCategory-description {
     font-size: 1.2rem;
     color: #000000;
     line-height: 1.4;
@@ -66,19 +68,18 @@ html, body {
     text-align: center;
 }
 
-.price, .wine-price {
+.price, .subCategory-price {
     font-weight: 800;
     font-size: 1.3rem;
     padding: 6px 12px;
     border-radius: 8px;
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
     align-self: center;
     user-select: none;
 }
 
-/* Сите картички да бидат исти по ширина и растојание */
 #categoryView {
     display: flex;
     flex-wrap: wrap;
@@ -87,4 +88,17 @@ html, body {
     padding: 1rem;
 }
 
+@media (max-width: 600px) {
+    .card-title, .subCategory-title {
+        font-size: 1rem;
+    }
 
+    .card-text, .subCategory-description {
+        font-size: 1rem;
+    }
+
+    .price, .subCategory-price {
+        font-size: 1.1rem;
+        padding: 4px 10px;
+    }
+}

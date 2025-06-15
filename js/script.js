@@ -184,6 +184,62 @@ const products={
                 price: "100"
             }
         ]
+    },
+    nonAlcoholic: {
+        softDrinks: [
+            {
+                title: {mk: "Џус јаболко", en: "Apple juice"},
+                price: "100"
+            },
+            {
+                title: {mk: "Џус Портокал", en: "Orange juice"},
+                price: "100"
+            },
+            {
+                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
+                price: "120"
+            },
+            {
+                title: {mk: "Цеден микс", en: "Juice mix"},
+                price: "250"
+            },
+            {
+                title: {mk: "Цеден портокал", en: "Orange juice - squeezed"},
+                price: "250"
+            },
+            {
+                title: {mk: "Цедевита", en: "Cedevita"},
+                price: "250"
+            },
+
+        ],
+        fizzyDrinks: [
+            {
+                title: {mk: "Coca cola", en: "Coca cola"},
+                price: "100"
+            },
+            {
+                title: {mk: "Pepsi", en: "Pepsi"},
+                price: "100"
+            },
+            {
+                title: {mk: "Fanta", en: "Fanta"},
+                price: "100"
+            },
+            {
+                title: {mk: "Schweppes ", en: "Schweppes"},
+                price: "120"
+            },
+            {
+                title: {mk: "Sprite", en: "Sprite"},
+                price: "250"
+            },
+            {
+                title: {mk: "Пелистерка", en: "Pelisterka"},
+                price: "250"
+            },
+
+        ]
     }
 
 
@@ -232,27 +288,34 @@ function showCategory(category) {
     mainDiv.classList.add("d-none");
     categoryView.classList.remove("d-none");
 
-    if (category === "alcoholic") {
-        showSubcategories(["cocktails", "wines", "beers"]);
+    if (category === "alcoholic" ) {
+        showSubcategories(["cocktails", "wines", "beers"],"alcoholic");
         return;
     }
-
+    if (category === "nonAlcoholic" ) {
+        showSubcategories(["softDrinks", "fizzyDrinks"],"nonAlcoholic");
+        return;
+    }
     const items = products[category];
     renderProducts(items);
 }
 
-function showSubcategories(subcategories) {
+function showSubcategories(subcategories,parentCategory) {
     currentSubcategory = null;
+    currentCategory = parentCategory;
     currentView = "category";
 
     const categoryView = document.getElementById("categoryView");
-    categoryView.innerHTML = "";  // Исчисти
+    categoryView.innerHTML = "";
 
     const subcategoryImages = {
         cocktails: "img/coctail.jpg",
         wines: "img/img_1.png",
         beers: "img/img.png",
+        fizzyDrinks:"img/fz.jpg" ,
+        softDrinks:"img/juices.jpg"
     };
+
 
     subcategories.forEach(sub => {
         const card = document.createElement("div");
@@ -260,7 +323,12 @@ function showSubcategories(subcategories) {
         card.style = "width: 13rem; cursor: pointer;";
 
         const titleText = language === "mk"
-            ? (sub === "cocktails" ? "Коктели" : sub === "wines" ? "Вина" : "Пива")
+            ? (sub === "cocktails" ? "Коктели"
+                : sub === "wines" ? "Вина"
+                    : sub === "beers" ? "Пива"
+                        : sub === "softDrinks" ? "Негазирани пијалоци"
+                            : sub === "fizzyDrinks" ? "Газирани пијалоци"
+                                : sub)
             : sub.charAt(0).toUpperCase() + sub.slice(1);
 
         card.innerHTML = `
@@ -275,7 +343,6 @@ function showSubcategories(subcategories) {
             currentView = "subcategory";
             showProductsOfSubcategory(sub);
         };
-
         categoryView.appendChild(card);
     });
 }
@@ -284,14 +351,19 @@ function showProductsOfSubcategory(subcategory) {
     currentSubcategory = subcategory;
     currentView = "subcategory";
 
-    if (subcategory === "wines" || subcategory === "beers") {
-        showSimpleList(subcategory);
+    const sourceCategory = ["cocktails", "wines", "beers"].includes(subcategory)
+        ? "alcoholic"
+        : "nonAlcoholic";
+
+    if (["wines", "beers", "softDrinks", "fizzyDrinks"].includes(subcategory)) {
+        showSimpleList(subcategory, sourceCategory);
         return;
     }
 
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = "";
-    const items = products.alcoholic[subcategory];
+
+    const items = products[sourceCategory][subcategory];
     renderProducts(items);
 }
 
@@ -315,44 +387,46 @@ function renderProducts(items) {
     });
 }
 
-function showSimpleList(subcategory) {
+function showSimpleList(subcategory, sourceCategory) {
     currentSubcategory = subcategory;
     currentView = "subcategory";
 
     const categoryView = document.getElementById("categoryView");
-    categoryView.innerHTML = ""; // чисти
+    categoryView.innerHTML = "";
 
-    const items = products.alcoholic[subcategory];
+    const items = products[sourceCategory][subcategory];
 
     items.forEach(item => {
         const div = document.createElement("div");
-        div.className = "wine-item";  // или некоја друга за стил
+        div.className = "subCategory-item";
 
         div.innerHTML = `
-            <div class="wine-title">${item.title[language]}</div>
-            <div class="wine-description">${item.description[language]}</div>
-            <div class="wine-price">${item.price} ден.</div>
+            <div class="subCategory-title">${item.title[language]}</div>
+            <div class="subCategory-description">${item.description ? item.description[language] : ""}</div>
+            <div class="subCategory-price">${item.price} ден.</div>
         `;
 
         categoryView.appendChild(div);
     });
 }
-
 document.getElementById("backBtn").onclick = () => {
     if (currentView === "subcategory" && currentSubcategory) {
-        // Ако сме во подкатегорија (пример коктели) врати се на листа на подкатегории
+        let subs = [];
+
+        if (["cocktails", "wines", "beers"].includes(currentSubcategory)) {
+            currentCategory = "alcoholic";
+            subs = ["cocktails", "wines", "beers"];
+        } else if (["softDrinks", "fizzyDrinks"].includes(currentSubcategory)) {
+            currentCategory = "nonAlcoholic";
+            subs = ["softDrinks", "fizzyDrinks"];
+        }
+
         currentSubcategory = null;
         currentView = "category";
-        showSubcategories(["cocktails", "wines", "beers"]);
-    } else if (currentView === "category" && currentCategory) {
-        // Ако сме во категорија (пример alcoholic), врати се на главниот екран
-        currentCategory = null;
-        currentView = "main";
+        showSubcategories(subs, currentCategory);
+    } else if (currentView === "category") {
         showMain();
-    } else {
-        // Ако сме на главната страница, нема назад
     }
 };
-
 // Почетна иницијализација
 changeLanguage(language);
