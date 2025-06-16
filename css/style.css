@@ -4,6 +4,7 @@ html, body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+    background-color: #1e1e1e;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;}
 
 
@@ -29,8 +30,8 @@ html, body {
 }
 
 .card, .subCategory-item {
-    background: linear-gradient(135deg, #ffffff, #dfdfe5);
-    border: 2px solid #3b2e1c; /* темно кафеава рамка за добар контраст */
+    background: linear-gradient(135deg, #2d2d1f, #2d2d2f);
+    border: 2px solid #796956; /* темно кафеава рамка за добар контраст */
     border-radius: 12px;
     padding: 18px 22px;
     margin-bottom: 20px;
@@ -45,14 +46,13 @@ html, body {
 .card-img-top {
     height: 160px;
     object-fit: cover;
-    border-bottom: 1px solid #eee;
     border-radius: 12px 12px 0 0;
 }
 
 .card-title, .subCategory-title {
     font-weight: 800;
     font-size: 1.2rem;
-    color: #3b2e1c;
+    color: #ffffff;
     margin-bottom: 10px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ html, body {
 
 .card-text, .subCategory-description {
     font-size: 1.2rem;
-    color: #000000;
+    color: #d8d5d5;
     line-height: 1.4;
     margin-bottom: 14px;
     flex-grow: 1;
@@ -77,6 +77,7 @@ html, body {
     text-align: center;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
     align-self: center;
+    color: white;
     user-select: none;
 }
 
