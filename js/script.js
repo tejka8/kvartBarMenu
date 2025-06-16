@@ -332,7 +332,7 @@ function showSubcategories(subcategories,parentCategory) {
             : sub.charAt(0).toUpperCase() + sub.slice(1);
 
         card.innerHTML = `
-            <img class="card-img-top" src="${subcategoryImages[sub]}" alt="${titleText}" />
+            <img class="card-img-top" src="${subcategoryImages[sub]}" alt="${titleText}" loading="lazy"  />
             <div class="card-body d-flex justify-content-center align-items-center" style="height: 5rem;">
                 <h5 class="card-title fw-bold text-center">${titleText}</h5>
             </div>
@@ -376,7 +376,7 @@ function renderProducts(items) {
         card.className = "card mb-3";
 
         card.innerHTML = `
-            <img class="card-img-top" src="${item.image}" alt="${item.title[language]}"/>
+            <img class="card-img-top" src="${item.image}" alt="${item.title[language]}" loading="lazy" />
             <div class="card-body">
                 <h5 class="card-title fw-bold">${item.title[language]}</h5>
                 <p class="card-text">${item.description[language]}</p>
