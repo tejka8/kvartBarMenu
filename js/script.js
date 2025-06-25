@@ -141,7 +141,7 @@ const products={
             {
                 title: { mk: "Caipiroska", en: "Caipiroska" },
                 description: { mk: "Вотка, лимета, шеќер", en: "Vodka, lime, sugar" },
-                image: "img/coctails/Caipirioska-min.jpg",
+                image: "img/coctails/Caipiroska-min.jpg",
                 price: "250"
             }
         ],
@@ -149,16 +149,19 @@ const products={
             {
                 title: { mk: "Т'га за југ", en: "T'ga za jug" },
                 description: { mk: "Македонско црвено вино", en: "Macedonian red wine" },
+                image:"img/wines/tga_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Шардоне", en: "Chardonnay" },
                 description: { mk: "Белo вино со ноти на тропско овошје и путер", en: "White wine with notes of tropical fruit and butter" },
+                image:"img/wines/chardonnay-min.jpg",
                 price: "230"
             },
             {
                 title: { mk: "Александрија", en: "Alexandria" },
                 description: { mk: "Белo вино со свеж вкус и арома на цвеќе", en: "White wine with fresh taste and floral aroma" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "210"
             },
         ],
@@ -166,21 +169,27 @@ const products={
             {
                 title: { mk: "Скопско", en: "Skopsko" },
                 description: { mk: "Лесно пиво", en: "Light beer" },
+                image:"img/beers/skopsko-min.jpg",
                 price: "100"
             },
             {
                 title: { mk: "Скопско смут", en: "Skopsko smooth" },
                 description: { mk: "Лесно пиво", en: "Light beer" },
+                image:"img/beers/smooth-min.jpg",
+
                 price: "100"
             },
             {
                 title: { mk: "Златен Даб", en: "Zlaten Dab" },
                 description: { mk: "Лесно пиво", en: "Light beer" },
+                image:"img/beers/zlatenDab-min.jpg",
+
                 price: "100"
             },
             {
                 title: { mk: "Хајнекен", en: "Heineken" },
                 description: { mk: "Лесно пиво", en: "Light beer" },
+                image:"img/beers/heineken-min.jpg",
                 price: "100"
             }
         ]
@@ -188,38 +197,48 @@ const products={
     nonAlcoholic: {
         softDrinks: [
             {
-                title: {mk: "Џус јаболко", en: "Apple juice"},
+                title: {mk: "Флаширан Џус", en: "Bottled juice"},
+                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
                 price: "100"
             },
-            {
-                title: {mk: "Џус Портокал", en: "Orange juice"},
-                price: "100"
-            },
-            {
-                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
-                price: "120"
-            },
+
             {
                 title: {mk: "Цеден микс", en: "Juice mix"},
+                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
                 price: "250"
             },
             {
                 title: {mk: "Цеден портокал", en: "Orange juice - squeezed"},
+                image: "img/nonAlcoholic/juices/orange_juice-min.jpg",
                 price: "250"
             },
             {
                 title: {mk: "Цедевита", en: "Cedevita"},
+                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
                 price: "250"
             },
+            {
+                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
+                image: "img/nonAlcoholic/juices/sanpelegrino-min.jpg",
+                price: "120"
+            },
+            {
+                title: {mk: "Монин", en: "Monin"},
+                image: "img/nonAlcoholic/juices/monin-min.jpg",
+                price: "250"
+            },
+
 
         ],
         fizzyDrinks: [
             {
                 title: {mk: "Coca cola", en: "Coca cola"},
+                image:"img/nonAlcoholic/fizzy/cocaCola-min.jpg",
                 price: "100"
             },
             {
                 title: {mk: "Pepsi", en: "Pepsi"},
+                image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
                 price: "100"
             },
             {
@@ -228,16 +247,15 @@ const products={
             },
             {
                 title: {mk: "Schweppes ", en: "Schweppes"},
+                image:"img/nonAlcoholic/fizzy/schwepped-min.jpg",
                 price: "120"
             },
             {
                 title: {mk: "Sprite", en: "Sprite"},
+                image:"img/nonAlcoholic/fizzy/sprite-min.jpg",
                 price: "250"
             },
-            {
-                title: {mk: "Пелистерка", en: "Pelisterka"},
-                price: "250"
-            },
+
 
         ]
     }
@@ -355,10 +373,6 @@ function showProductsOfSubcategory(subcategory) {
         ? "alcoholic"
         : "nonAlcoholic";
 
-    if (["wines", "beers", "softDrinks", "fizzyDrinks"].includes(subcategory)) {
-        showSimpleList(subcategory, sourceCategory);
-        return;
-    }
 
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = "";
@@ -379,7 +393,7 @@ function renderProducts(items) {
             <img class="card-img-top" src="${item.image}" alt="${item.title[language]}" loading="lazy" />
             <div class="card-body">
                 <h5 class="card-title fw-bold">${item.title[language]}</h5>
-                <p class="card-text">${item.description[language]}</p>
+                ${item.description ? `<p class="card-text">${item.description[language]}</p>` : ""}
                 <p class="price card-text">${item.price}</p>
             </div>
         `;
@@ -387,28 +401,7 @@ function renderProducts(items) {
     });
 }
 
-function showSimpleList(subcategory, sourceCategory) {
-    currentSubcategory = subcategory;
-    currentView = "subcategory";
 
-    const categoryView = document.getElementById("categoryView");
-    categoryView.innerHTML = "";
-
-    const items = products[sourceCategory][subcategory];
-
-    items.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "subCategory-item";
-
-        div.innerHTML = `
-            <div class="subCategory-title">${item.title[language]}</div>
-            <div class="subCategory-description">${item.description ? item.description[language] : ""}</div>
-            <div class="subCategory-price">${item.price} ден.</div>
-        `;
-
-        categoryView.appendChild(div);
-    });
-}
 document.getElementById("backBtn").onclick = () => {
     if (currentView === "subcategory" && currentSubcategory) {
         let subs = [];
@@ -428,5 +421,5 @@ document.getElementById("backBtn").onclick = () => {
         showMain();
     }
 };
-// Почетна иницијализација
+
 changeLanguage(language);

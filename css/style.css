@@ -29,7 +29,7 @@ html, body {
     font-size: 1rem;
 }
 
-.card, .subCategory-item {
+.card{
     background: linear-gradient(135deg, #2d2d1f, #2d2d2f);
     border: 2px solid #796956; /* темно кафеава рамка за добар контраст */
     border-radius: 12px;
@@ -49,7 +49,7 @@ html, body {
     border-radius: 12px 12px 0 0;
 }
 
-.card-title, .subCategory-title {
+.card-title {
     font-weight: 800;
     font-size: 1.2rem;
     color: #ffffff;
@@ -59,7 +59,7 @@ html, body {
     text-align: center;
 }
 
-.card-text, .subCategory-description {
+.card-text {
     font-size: 1.2rem;
     color: #d8d5d5;
     line-height: 1.4;
@@ -68,7 +68,7 @@ html, body {
     text-align: center;
 }
 
-.price, .subCategory-price {
+.price {
     font-weight: 800;
     font-size: 1.3rem;
     padding: 6px 12px;
