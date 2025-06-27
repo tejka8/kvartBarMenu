@@ -320,8 +320,28 @@ function showCategory(category) {
     const items = products[category];
     renderProducts(items);
 }
+function getSubcategoryTitle(sub) {
+    const translations = {
+        mk: {
+            cocktails: "Коктели",
+            wines: "Вина",
+            beers: "Пива",
+            softDrinks: "Негазирани пијалоци",
+            fizzyDrinks: "Газирани пијалоци"
+        },
+        en: {
+            cocktails: "Cocktails",
+            wines: "Wines",
+            beers: "Beers",
+            softDrinks: "Soft Drinks",
+            fizzyDrinks: "Fizzy Drinks"
+        }
+    };
 
-function showSubcategories(subcategories,parentCategory) {
+    return translations[language]?.[sub] || sub;
+}
+
+function showSubcategories(subcategories, parentCategory) {
     currentSubcategory = null;
     currentCategory = parentCategory;
     currentView = "category";
@@ -333,27 +353,18 @@ function showSubcategories(subcategories,parentCategory) {
         cocktails: "img/coctail.jpg",
         wines: "img/img_1.png",
         beers: "img/img.png",
-        fizzyDrinks:"img/fz.jpg" ,
-        softDrinks:"img/juices.jpg"
+        fizzyDrinks: "img/fz.jpg",
+        softDrinks: "img/juices.jpg"
     };
-
 
     subcategories.forEach(sub => {
         const card = document.createElement("div");
-        card.className = "card mb-3 card-small";
+        card.className = "card mb-3 card-small"; // користи CSS класа, не style
 
-
-        const titleText = language === "mk"
-            ? (sub === "cocktails" ? "Коктели"
-                : sub === "wines" ? "Вина"
-                    : sub === "beers" ? "Пива"
-                        : sub === "softDrinks" ? "Негазирани пијалоци"
-                            : sub === "fizzyDrinks" ? "Газирани пијалоци"
-                                : sub)
-            : sub.charAt(0).toUpperCase() + sub.slice(1);
+        const titleText = getSubcategoryTitle(sub).toUpperCase(); // сите букви големи
 
         card.innerHTML = `
-            <img class="card-img-top" src="${subcategoryImages[sub]}" alt="${titleText}" loading="lazy"  />
+            <img class="card-img-top" src="${subcategoryImages[sub]}" alt="${titleText}" loading="lazy" />
             <div class="card-body d-flex justify-content-center align-items-center" style="height: 5rem;">
                 <h5 class="card-title fw-bold text-center">${titleText}</h5>
             </div>
@@ -364,9 +375,11 @@ function showSubcategories(subcategories,parentCategory) {
             currentView = "subcategory";
             showProductsOfSubcategory(sub);
         };
+
         categoryView.appendChild(card);
     });
 }
+
 
 function showProductsOfSubcategory(subcategory) {
     currentSubcategory = subcategory;
