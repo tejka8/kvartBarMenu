@@ -287,9 +287,9 @@ function changeLanguage(lang) {
 
     document.getElementById("currLang").textContent = lang.toUpperCase();
 
-    document.getElementById("titleCoffee").textContent = i18n("titleCoffee");
-    document.getElementById("titleAlcoholic").textContent = i18n("titleAlcoholic");
-    document.getElementById("titleNonAlcoholic").textContent = i18n("titleNonAlcoholic");
+    document.getElementById("titleCoffee").textContent = i18n("titleCoffee").toUpperCase();
+    document.getElementById("titleAlcoholic").textContent = i18n("titleAlcoholic").toUpperCase();
+    document.getElementById("titleNonAlcoholic").textContent = i18n("titleNonAlcoholic").toUpperCase();
 
     if (currentView === "category" && currentCategory) {
         showCategory(currentCategory);
@@ -340,15 +340,15 @@ function showSubcategories(subcategories,parentCategory) {
 
     subcategories.forEach(sub => {
         const card = document.createElement("div");
-        card.className = "card mb-3";
-        card.style = "width: 13rem; cursor: pointer;";
+        card.className = "card mb-3 card-small";
+
 
         const titleText = language === "mk"
             ? (sub === "cocktails" ? "Коктели"
                 : sub === "wines" ? "Вина"
                     : sub === "beers" ? "Пива"
-                        : sub === "soft Drinks" ? "Негазирани пијалоци"
-                            : sub === "fizzy Drinks" ? "Газирани пијалоци"
+                        : sub === "softDrinks" ? "Негазирани пијалоци"
+                            : sub === "fizzyDrinks" ? "Газирани пијалоци"
                                 : sub)
             : sub.charAt(0).toUpperCase() + sub.slice(1);
 

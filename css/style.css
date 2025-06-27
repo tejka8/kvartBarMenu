@@ -94,6 +94,10 @@ html, body {
     gap: 1rem;
     padding: 1rem;
 }
+.card-small {
+    width: 13rem;
+}
+
 
 @media (max-width: 600px) {
     .card-title, .subCategory-title {
