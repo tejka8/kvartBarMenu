@@ -1,4 +1,3 @@
-let language = "mk";
 
 const dictionary={
     mk:{
@@ -264,12 +263,14 @@ const products={
 }
 let currentCategory = null;      // Пр. "coffee", "alcoholic"
 let currentSubcategory = null;   // Пр. "cocktails", "wines", "beers"
-let currentView = "main";        // "main", "category", "subcategory"
+let currentView = "main";// "main", "category", "subcategory"
+
+let language = localStorage.getItem("language") || "mk";
 
 function i18n(key) {
-    language = language ?? "en";
     return dictionary[language][key];
 }
+
 
 function showMain() {
     currentCategory = null;
@@ -282,6 +283,8 @@ function showMain() {
 
 function changeLanguage(lang) {
     language = lang;
+    localStorage.setItem("language", lang);
+
     document.getElementById("currLang").textContent = lang.toUpperCase();
 
     document.getElementById("titleCoffee").textContent = i18n("titleCoffee");
