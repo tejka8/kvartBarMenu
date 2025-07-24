@@ -124,7 +124,6 @@ const products={
                 image: "img/coctails/ts-min.jpg",
                 price: "250"
             },
-
             {
                 title: { mk: "Paloma", en: "Paloma" },
                 description: { mk: "Текила, сода од грејпфрут, лимонов сок, сол", en: "Tequila, grapefruit soda, lime juice, salt" },
@@ -146,22 +145,52 @@ const products={
         ],
         wines: [
             {
-                title: { mk: "Т'га за југ", en: "T'ga za jug" },
-                description: { mk: "Македонско црвено вино", en: "Macedonian red wine" },
-                image:"img/wines/tga_black_bg-min.jpg",
-                price: "180"
-            },
-            {
-                title: { mk: "Шардоне", en: "Chardonnay" },
-                description: { mk: "Белo вино со ноти на тропско овошје и путер", en: "White wine with notes of tropical fruit and butter" },
-                image:"img/wines/chardonnay-min.jpg",
-                price: "230"
-            },
-            {
                 title: { mk: "Александрија", en: "Alexandria" },
-                description: { mk: "Белo вино со свеж вкус и арома на цвеќе", en: "White wine with fresh taste and floral aroma" },
+                description: { mk: "0.187", en: "0.187" },
                 image:"img/wines/alexadria_black_bg-min.jpg",
-                price: "210"
+                price: "250"
+            },
+            {
+                title: { mk: "Александрија Розе", en: "Alexandria Rose" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
+            },
+            {
+                title: { mk: "Александрија Црвено", en: "Alexandria Red" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
+            },
+            {
+                title: { mk: "Александрија Куве", en: "Alexandria Cuve" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "320"
+            },
+            {
+                title: { mk: "Александрија Розе куве", en: "Alexandria Rose Cuve" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "320"
+            },
+            {
+                title: { mk: "Александрија Црвено куве", en: "Alexandria Red Cuve" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "320"
+            },
+            {
+                title: { mk: "Темјаника", en: "Temjanika" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
+            },
+            {
+                title: { mk: "Траминец", en: "Traminec" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
             },
         ],
         beers: [
@@ -191,6 +220,227 @@ const products={
                 image:"img/beers/heineken-min.jpg",
                 price: "100"
             }
+        ],
+        whiskey: [
+            {
+                title: { mk: "Ballantines", en: "Ballantines" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "220"
+            },
+            {
+                title: { mk: "Chivas", en: "Chivas" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "300"
+            },
+            {
+                title: { mk: "Bushmills", en: "Bushmills" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Famous Grouse", en: "Famous Grouse" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Jim Beam", en: "Jim Beam" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Johnnie Walker Red", en: "Johnnie Walker Red" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Johnnie Walker Black", en: "Johnnie Walker Black" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "300"
+            },
+            {
+                title: { mk: "Jack Daniels", en: "Jack Daniels" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "270"
+            },
+            {
+                title: { mk: "Jack Daniels Apple", en: "Jack Daniels Apple" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "290"
+            },
+            {
+                title: { mk: "Jameson", en: "Jameson" },
+                description: { mk: "0.187", en: "0.187" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "220"
+            },
+        ],
+        vodka: [
+            {
+                title: { mk: "Absolut", en: "Absolut" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Smirnoff", en: "Smirnoff" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Finlandia", en: "Finlandia" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "150"
+            },
+            {
+                title: { mk: "Gray Goose", en: "Gray Goose" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "400"
+            },
+            {
+                title: { mk: "Fjodor", en: "Fjodor" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+
+        ],
+        gin: [
+            {
+                title: { mk: "Bombay", en: "Bombay" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
+            },
+            {
+                title: { mk: "Gordons", en: "Gordons" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Gordons Pink", en: "Gordons Pink" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Hendrick's", en: "Hendrick's" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "350"
+            },
+            {
+                title: { mk: "Fjodor", en: "Fjodor" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+
+        ],
+        vermouth: [
+            {
+                title: { mk: "Martini Bianco", en: "Martini Bianco" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+            {
+                title: { mk: "Martini Rosso", en: "Martini Rosso" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+            {
+                title: { mk: "Martini Fiero", en: "Martini Fiero" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "150"
+            },
+        ],
+        rum: [
+            {
+                title: { mk: "Bacardi White", en: "Bacardi White" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+            {
+                title: { mk: "Havana", en: "Havana" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Old Pascas", en: "Old Pascas" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "150"
+            },
+            {
+                title: { mk: "Captain Morgan", en:  "Captain Morgan" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+        ],
+        liquor: [
+            {
+                title: { mk: "Kahlua", en: "Kahlua" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Baileys ", en: "Baileys " },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "220"
+            },
+            {
+                title: { mk: "Amareto", en: "Amareto" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "***"
+            },
+            {
+                title: { mk: "Aperol", en:  "Aperol" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "250"
+            },
+            {
+                title: { mk: "Campari", en:  "Campari" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "220"
+            },
+            {
+                title: { mk: "Jeger", en:  "Jeger" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "200"
+            },
+            {
+                title: { mk: "Pelinkovac", en:  "Pelinkovac" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
+        ],
+        tequila: [
+            {
+                title: { mk: "Mendoza White", en: "Mendoza White" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+            {
+                title: { mk: "Mendoza Yellow", en: "Mendoza Yellow" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "220"
+            },
+
+        ],
+        champagne: [
+            {
+                title: { mk: "Prosecco", en: "Prosecco" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "***"
+            },
+        ],
+        brandy: [
+            {
+                title: { mk: "Napoleon", en: "Napoleon" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "120"
+            },
+            {
+                title: { mk: "Stock", en: "Stock" },
+                image:"img/wines/alexadria_black_bg-min.jpg",
+                price: "180"
+            },
         ]
     },
     nonAlcoholic: {
@@ -310,7 +560,7 @@ function showCategory(category) {
     categoryView.classList.remove("d-none");
 
     if (category === "alcoholic" ) {
-        showSubcategories(["cocktails", "wines", "beers"],"alcoholic");
+        showSubcategories(["cocktails", "wines", "beers","vodka","whiskey","gin","rum","vermouth","tequila","liquor","champagne","brandy"],"alcoholic");
         return;
     }
     if (category === "nonAlcoholic" ) {
@@ -324,8 +574,17 @@ function getSubcategoryTitle(sub) {
     const translations = {
         mk: {
             cocktails: "Коктели",
-            wines: "Вина",
-            beers: "Пива",
+            wines: "Вино",
+            beers: "Пиво",
+            vodka:"Вотка",
+            whiskey:"Виски",
+            gin:"Џин",
+            rum:"Рум",
+            vermouth:"Вермут",
+            tequila:"Текила",
+            liquor:"Ликер",
+            champagne:"Шампањ",
+            brandy: "Коњак",
             softDrinks: "Негазирани пијалоци",
             fizzyDrinks: "Газирани пијалоци"
         },
@@ -333,6 +592,15 @@ function getSubcategoryTitle(sub) {
             cocktails: "Cocktails",
             wines: "Wines",
             beers: "Beers",
+            vodka:"Vodka",
+            whiskey:"Whiskey",
+            gin:"Gin",
+            rum:"Rum",
+            vermouth:"Vermouth",
+            tequila:"Tequila",
+            liquor:"liquor",
+            champagne:"champagne",
+            brandy:"brandy",
             softDrinks: "Soft Drinks",
             fizzyDrinks: "Fizzy Drinks"
         }
@@ -353,6 +621,15 @@ function showSubcategories(subcategories, parentCategory) {
         cocktails: "img/coctail.jpg",
         wines: "img/img_1.png",
         beers: "img/img.png",
+        vodka:"img/vodka/vodka.jpg",
+        whiskey:"img/whiskey/whiskey.jpg",
+        vermouth:"img/vermouth/vermouth.jpg",
+        tequila:"img/tequila/tequila.jpg",
+        rum:"img/rum/rum.jpg",
+        liquor:"img/liquor/liquor.jpg",
+        gin:"img/gin/gin.jpg",
+        champagne:"img/champagne/champagne.jpg",
+        brandy:"img/brandy/brandy.jpg",
         fizzyDrinks: "img/fz.jpg",
         softDrinks: "img/juices.jpg"
     };
@@ -380,12 +657,16 @@ function showSubcategories(subcategories, parentCategory) {
     });
 }
 
+const noImageSubcategories = [
+    "vodka", "whiskey", "gin", "tequila", "champagne",
+    "brandy", "liquor", "beers", "wines","rum","vermouth"
+];
 
 function showProductsOfSubcategory(subcategory) {
     currentSubcategory = subcategory;
     currentView = "subcategory";
 
-    const sourceCategory = ["cocktails", "wines", "beers"].includes(subcategory)
+    const sourceCategory = ["cocktails", "wines", "beers","vodka","whiskey","gin","rum","vermouth","tequila","liquor","champagne","brandy"].includes(subcategory)
         ? "alcoholic"
         : "nonAlcoholic";
 
@@ -394,8 +675,38 @@ function showProductsOfSubcategory(subcategory) {
     categoryView.innerHTML = "";
 
     const items = products[sourceCategory][subcategory];
-    renderProducts(items);
+
+
+    if (noImageSubcategories.includes(subcategory)) {
+        showSimpleList(subcategory);
+    } else {
+        renderProducts(items);
+    }
 }
+
+function showSimpleList(subcategory) {
+    currentSubcategory = subcategory;
+    currentView = "subcategory";
+
+    const categoryView = document.getElementById("categoryView");
+    categoryView.innerHTML = ""; // чисти
+
+    const items = products.alcoholic[subcategory];
+
+    items.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "wine-item";  // или некоја друга за стил
+
+        div.innerHTML = `
+            <div class="wine-title">${item.title[language]}</div>
+            ${item.description ? `<div class="wine-description">${item.description[language]}</div>` : ""}
+            <div class="wine-price">${item.price} ден.</div>
+        `;
+
+        categoryView.appendChild(div);
+    });
+}
+
 
 function renderProducts(items) {
     const categoryView = document.getElementById("categoryView");
@@ -422,9 +733,9 @@ document.getElementById("backBtn").onclick = () => {
     if (currentView === "subcategory" && currentSubcategory) {
         let subs = [];
 
-        if (["cocktails", "wines", "beers"].includes(currentSubcategory)) {
+        if (["cocktails", "wines", "beers","vodka","whiskey","gin","rum","vermouth","tequila","liquor","champagne","brandy"].includes(currentSubcategory)) {
             currentCategory = "alcoholic";
-            subs = ["cocktails", "wines", "beers"];
+            subs = ["cocktails", "wines", "beers","vodka","whiskey","gin","rum","vermouth","tequila","liquor","champagne","brandy"];
         } else if (["softDrinks", "fizzyDrinks"].includes(currentSubcategory)) {
             currentCategory = "nonAlcoholic";
             subs = ["softDrinks", "fizzyDrinks"];

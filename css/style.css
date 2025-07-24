@@ -35,14 +35,14 @@ html, body {
     width: 100%;
     z-index: 999;
 }
-.card{
+.card,.wine-item{
     background: linear-gradient(135deg, #2d2d1f, #2d2d2f);
     border: 2px solid #796956; /* темно кафеава рамка за добар контраст */
     border-radius: 12px;
     padding: 18px 22px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 240px;
+    max-width: 250px;
     box-shadow: 0 6px 14px rgba(59, 46, 28, 0.3);
     transition: none;
     display: flex;
@@ -55,7 +55,7 @@ html, body {
     border-radius: 12px 12px 0 0;
 }
 
-.card-title {
+.card-title, .wine-title {
     font-weight: 800;
     font-size: 1.2rem;
     color: #ffffff;
@@ -65,7 +65,7 @@ html, body {
     text-align: center;
 }
 
-.card-text {
+.card-text, .wine-description {
     font-size: 1.2rem;
     color: #d8d5d5;
     line-height: 1.4;
@@ -74,7 +74,7 @@ html, body {
     text-align: center;
 }
 
-.price {
+.price, .wine-price{
     font-weight: 800;
     font-size: 1.3rem;
     padding: 6px 12px;
