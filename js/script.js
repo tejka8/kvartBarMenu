@@ -14,46 +14,106 @@ const dictionary={
 const products={
     coffee:[
         {
-            title:{mk:"Еспресо/Дупло еспресо ", en:"Espresso/Double Espresso"},
+            title:{mk:"Еспресо", en:"Espresso"},
             description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
             image:"img/coffee/espresso.jpg",
-            price:"70/90"
+            price:"80"
+        },
+        {
+            title:{mk:"Еспресо Безкофеинско", en:"Espresso Decaf"},
+            description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
+            image:"img/coffee/espresso.jpg",
+            price:"80"
+        },
+        {
+            title:{mk:"Мало Макијато", en:"Small Macchiato"},
+            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
+            image:"img/coffee/smallMachiatto.jpg",
+            price:"70"
         },
         {
             title:{mk:"Макијато", en:"Macchiato"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"120"
+            image:"img/coffee/macchiato.jpg",
+            price:"100"
         },
         {
-            title:{mk:"Лате Макијато", en:"Latte macchiato"},
+            title:{mk:"Макијато Безкофеинско", en:"Macchiato Decaf"},
+            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
+            image:"img/coffee/macchiato.jpg",
+            price:"100"
+        },
+        {
+            title:{mk:"Капучино", en:"Cappuccino"},
+            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
+            image:"img/coffee/cappucino.jpg",
+            price:"100"
+        },
+        {
+            title:{mk:"Капучино Безкофеинско", en:"Cappuccino Decaf"},
+            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
+            image:"img/coffee/cappucino.jpg",
+            price:"100"
+        },
+        {
+            title:{mk:"Лате", en:"Latte"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"140"
+            image:"img/coffee/latte.jpg",
+            price:"120"
         },
         {
             title:{mk:"Фредо Еспресо", en:"Fredo Espresso"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"160"
+            image:"img/coffee/fredoEspresso.jpg",
+            price:"100"
         },
         {
             title:{mk:"Фредо Капучино", en:"Fredo Cappuccino"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"160"
+            image:"img/coffee/fredoCappucino.jpg",
+            price:"130"
         },
         {
             title:{mk:"Нескафе", en:"Nescafe"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"160"
+            image:"img/coffee/frappe.jpg",
+            price:"110"
+        },
+        {
+            title:{mk:"Нескафе Шејк", en:"Nescafe Shake"},
+            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
+            image:"img/coffee/frappe.jpg",
+            price:"120"
+        },
+        {
+            title:{mk:"Топло Чоколадо", en:"Hot Chocolate"},
+            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
+            image:"img/coffee/hotChocolate.jpg",
+            price:"100"
+        },
+        {
+            title:{mk:"Топло Чоколадо Плазма", en:"Hot Chocolate Plazma"},
+            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
+            image:"img/coffee/hotChocolate.jpg",
+            price:"120"
+        },
+        {
+            title:{mk:"Салеп", en:"Salep"},
+            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
+            image:"img/coffee/salep.jpg",
+            price:"70"
         },
         {
             title:{mk:"Чај", en:"Tea"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/espresso.jpg",
-            price:"160"
+            image:"img/coffee/tea.jpg",
+            price:"80"
+        },
+        {
+            title:{mk:"Чај со Рум", en:"Rum Tea"},
+            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
+            image:"img/coffee/teaRum.jpg",
+            price:"100/120"
         },
     ],
     alcoholic: {
@@ -61,85 +121,85 @@ const products={
             {
                 title: { mk: "Cosmopolitan", en: "Cosmopolitan" },
                 description: { mk: "Вотка, сок од брусница, ликер", en: "Vodka, cranberry juice, liqueur" },
-                image: "img/coctails/cosmopolitan-min.jpg",
+                image: "img/alcoholicDrinks/coctails/cosmopolitan-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Mai Tai", en: "Mai Tai" },
                 description: { mk: "Ром, лимонов сок, оргеат сируп, портокалов ликер", en: "Rum, lime juice, orgeat syrup, orange liqueur" },
-                image: "img/coctails/maiTai-min.jpg",
+                image: "img/alcoholicDrinks/coctails/maiTai-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Bramble", en: "Bramble" },
                 description: { mk: "Џин, лимонов сок, шеќерен сируп, ликер од боровинка", en: "Gin, lemon juice, sugar syrup, blackberry liqueur" },
-                image: "img/coctails/brumble.jpg",
+                image: "img/alcoholicDrinks/coctails/brumble.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Blue Frog", en: "Blue Frog" },
                 description: { mk: "Вотка, сино курaсо, лимонов сок, шеќерен сируп", en: "Vodka, blue curaçao, lemon juice, sugar syrup" },
-                image: "img/coctails/blueFrog-min.jpg",
+                image: "img/alcoholicDrinks/coctails/blueFrog-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Tequila Sunrise", en: "Tequila Sunrise" },
                 description: { mk: "Текила, портокалов сок, гренадин", en: "Tequila, orange juice, grenadine" },
-                image: "img/coctails/ts-min.jpg",
+                image: "img/alcoholicDrinks/coctails/ts-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Sex on the Beach", en: "Sex on the Beach" },
                 description: { mk: "Вотка, ликер од праска, портокалов и сок од брусница", en: "Vodka, peach schnapps, orange juice, cranberry juice" },
-                image: "img/coctails/ts-min.jpg",
+                image: "img/alcoholicDrinks/coctails/ts-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Mojito", en: "Mojito" },
                 description: { mk: "Белен ром, шеќер, лимета, нане, сода вода", en: "White rum, sugar, lime, mint, soda water" },
-                image: "img/coctails/mojito-min.jpg",
+                image: "img/alcoholicDrinks/coctails/mojito-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Negroni", en: "Negroni" },
                 description: { mk: "Џин, Кампари, слатко вермут", en: "Gin, Campari, sweet vermouth" },
-                image: "img/coctails/negroni-min.jpg",
+                image: "img/alcoholicDrinks/coctails/negroni-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Martini", en: "Martini" },
                 description: { mk: "Џин и сув вермут, гарнирано со маслинка или кора од лимон", en: "Gin and dry vermouth, garnished with olive or lemon twist" },
-                image: "img/coctails/martini-min.jpg",
+                image: "img/alcoholicDrinks/coctails/martini-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Manhattan", en: "Manhattan" },
                 description: { mk: "Виски, слатко вермут, битери", en: "Whiskey, sweet vermouth, bitters" },
-                image: "img/coctails/manhattan-min.jpg",
+                image: "img/alcoholicDrinks/coctails/manhattan-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Whiskey Sour", en: "Whiskey Sour" },
                 description: { mk: "Виски, лимонов сок, шеќер, белка од јајце (опционално)", en: "Whiskey, lemon juice, sugar, egg white (optional)" },
-                image: "img/coctails/ts-min.jpg",
+                image: "img/alcoholicDrinks/coctails/ts-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Paloma", en: "Paloma" },
                 description: { mk: "Текила, сода од грејпфрут, лимонов сок, сол", en: "Tequila, grapefruit soda, lime juice, salt" },
-                image: "img/coctails/paloma-min.jpg",
+                image: "img/alcoholicDrinks/coctails/paloma-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Pornstar Martini", en: "Pornstar Martini" },
                 description: { mk: "Ванила вотка, ликер од пасионско овошје, пире од пасионско овошје, просеко", en: "Vanilla vodka, passion fruit liqueur, passion fruit puree, prosecco" },
-                image: "img/coctails/pornstarM-min.jpg",
+                image: "img/alcoholicDrinks/coctails/pornstarM-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Caipiroska", en: "Caipiroska" },
                 description: { mk: "Вотка, лимета, шеќер", en: "Vodka, lime, sugar" },
-                image: "img/coctails/Caipiroska-min.jpg",
+                image: "img/alcoholicDrinks/coctails/Caipiroska-min.jpg",
                 price: "250"
             }
         ],
@@ -147,161 +207,132 @@ const products={
             {
                 title: { mk: "Александрија", en: "Alexandria" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Александрија Розе", en: "Alexandria Rose" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Александрија Црвено", en: "Alexandria Red" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Александрија Куве", en: "Alexandria Cuve" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "320"
             },
             {
                 title: { mk: "Александрија Розе куве", en: "Alexandria Rose Cuve" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "320"
             },
             {
                 title: { mk: "Александрија Црвено куве", en: "Alexandria Red Cuve" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "320"
             },
             {
                 title: { mk: "Темјаника", en: "Temjanika" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Траминец", en: "Traminec" },
                 description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
         ],
         beers: [
             {
-                title: { mk: "Скопско", en: "Skopsko" },
-                description: { mk: "Лесно пиво", en: "Light beer" },
-                image:"img/beers/skopsko-min.jpg",
-                price: "100"
-            },
-            {
-                title: { mk: "Скопско смут", en: "Skopsko smooth" },
-                description: { mk: "Лесно пиво", en: "Light beer" },
-                image:"img/beers/smooth-min.jpg",
-
-                price: "100"
+                title: { mk: "Туборг", en: "Tuborg" },
+                description: { mk: "0.33", en: "0.33" },
+                price: "190"
             },
             {
                 title: { mk: "Златен Даб", en: "Zlaten Dab" },
-                description: { mk: "Лесно пиво", en: "Light beer" },
-                image:"img/beers/zlatenDab-min.jpg",
-
-                price: "100"
+                description: { mk: "0.33", en: "0.33" },
+                price: "160"
             },
             {
-                title: { mk: "Хајнекен", en: "Heineken" },
-                description: { mk: "Лесно пиво", en: "Light beer" },
-                image:"img/beers/heineken-min.jpg",
-                price: "100"
-            }
+                title: { mk: "Златен Даб Амбер", en: "Zlaten Dab Amber" },
+                description: { mk: "0.33", en: "0.33" },
+                price: "160"
+            },
+            {
+                title: { mk: "Златен Даб Темно", en: "Zlaten Dab Dark" },
+                description: { mk: "0.33", en: "0.33" },
+                price: "160"
+            },
+            {
+                title: { mk: "Корона", en: "Corona" },
+                description: { mk: "0.33", en: "0.33" },
+                price: "220"
+            },
         ],
         whiskey: [
             {
                 title: { mk: "Ballantines", en: "Ballantines" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "220"
             },
             {
                 title: { mk: "Chivas", en: "Chivas" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "300"
             },
             {
                 title: { mk: "Bushmills", en: "Bushmills" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Famous Grouse", en: "Famous Grouse" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Jim Beam", en: "Jim Beam" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
             {
                 title: { mk: "Johnnie Walker Red", en: "Johnnie Walker Red" },
-                description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
             {
                 title: { mk: "Johnnie Walker Black", en: "Johnnie Walker Black" },
-                description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "300"
             },
             {
                 title: { mk: "Jack Daniels", en: "Jack Daniels" },
-                description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "270"
             },
             {
                 title: { mk: "Jack Daniels Apple", en: "Jack Daniels Apple" },
-                description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "290"
             },
             {
                 title: { mk: "Jameson", en: "Jameson" },
-                description: { mk: "0.187", en: "0.187" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "220"
             },
         ],
         vodka: [
             {
                 title: { mk: "Absolut", en: "Absolut" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Smirnoff", en: "Smirnoff" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Finlandia", en: "Finlandia" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "150"
             },
             {
                 title: { mk: "Gray Goose", en: "Gray Goose" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "400"
             },
             {
                 title: { mk: "Fjodor", en: "Fjodor" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
 
@@ -309,27 +340,22 @@ const products={
         gin: [
             {
                 title: { mk: "Bombay", en: "Bombay" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Gordons", en: "Gordons" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Gordons Pink", en: "Gordons Pink" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
             {
                 title: { mk: "Hendrick's", en: "Hendrick's" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "350"
             },
             {
                 title: { mk: "Fjodor", en: "Fjodor" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
 
@@ -337,88 +363,72 @@ const products={
         vermouth: [
             {
                 title: { mk: "Martini Bianco", en: "Martini Bianco" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
             {
                 title: { mk: "Martini Rosso", en: "Martini Rosso" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
             {
                 title: { mk: "Martini Fiero", en: "Martini Fiero" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "150"
             },
         ],
         rum: [
             {
                 title: { mk: "Bacardi White", en: "Bacardi White" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
             {
                 title: { mk: "Havana", en: "Havana" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
             {
                 title: { mk: "Old Pascas", en: "Old Pascas" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "150"
             },
             {
                 title: { mk: "Captain Morgan", en:  "Captain Morgan" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
         ],
         liquor: [
             {
                 title: { mk: "Kahlua", en: "Kahlua" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "200"
             },
             {
                 title: { mk: "Baileys ", en: "Baileys " },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "220"
             },
             {
                 title: { mk: "Amareto", en: "Amareto" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "***"
             },
             {
                 title: { mk: "Aperol", en:  "Aperol" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Campari", en:  "Campari" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "220"
             },
             {
-                title: { mk: "Jeger", en:  "Jeger" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
+                title: { mk: "Jegermeister", en:  "Jegermeister" },
                 price: "200"
             },
             {
                 title: { mk: "Pelinkovac", en:  "Pelinkovac" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
         ],
         tequila: [
             {
                 title: { mk: "Mendoza White", en: "Mendoza White" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
             {
                 title: { mk: "Mendoza Yellow", en: "Mendoza Yellow" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "220"
             },
 
@@ -426,19 +436,16 @@ const products={
         champagne: [
             {
                 title: { mk: "Prosecco", en: "Prosecco" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "***"
             },
         ],
         brandy: [
             {
                 title: { mk: "Napoleon", en: "Napoleon" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "120"
             },
             {
                 title: { mk: "Stock", en: "Stock" },
-                image:"img/wines/alexadria_black_bg-min.jpg",
                 price: "180"
             },
         ]
@@ -446,66 +453,80 @@ const products={
     nonAlcoholic: {
         softDrinks: [
             {
-                title: {mk: "Флаширан Џус", en: "Bottled juice"},
-                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
-                price: "100"
-            },
-
-            {
                 title: {mk: "Цеден микс", en: "Juice mix"},
-                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
-                price: "250"
+                image: "img/nonAlcoholic/juices/mix.jpg",
+                price: "200"
             },
             {
                 title: {mk: "Цеден портокал", en: "Orange juice - squeezed"},
-                image: "img/nonAlcoholic/juices/orange_juice-min.jpg",
-                price: "250"
+                image: "img/nonAlcoholic/juices/orangeJuice.jpg",
+                price: "170"
+            },
+            {
+                title: {mk: "Цеден лимон", en: "Orange lemon - squeezed"},
+                image: "img/nonAlcoholic/juices/lemonJuice.jpg",
+                price: "150"
             },
             {
                 title: {mk: "Цедевита", en: "Cedevita"},
-                image: "img/nonAlcoholic/juices/bottledJuice-min.jpg",
-                price: "250"
+                image: "img/nonAlcoholic/juices/cedevita.jpg",
+                price: "80"
             },
             {
                 title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
+                description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
                 image: "img/nonAlcoholic/juices/sanpelegrino-min.jpg",
-                price: "120"
+                price: "160"
             },
             {
-                title: {mk: "Монин", en: "Monin"},
-                image: "img/nonAlcoholic/juices/monin-min.jpg",
-                price: "250"
+                title: {mk: "Књаз Милош ", en: "Knjaz Milos"},
+                description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
+                image: "img/nonAlcoholic/juices/KM.jpg",
+                price: "80"
             },
-
+           {
+                title: {mk: "Аквавива ", en: "Aquaviva"},
+                description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
+                image: "img/nonAlcoholic/juices/voda.jpg",
+                price: "80"
+            },
 
         ],
         fizzyDrinks: [
-            {
-                title: {mk: "Coca cola", en: "Coca cola"},
-                image:"img/nonAlcoholic/fizzy/cocaCola-min.jpg",
-                price: "100"
-            },
+
             {
                 title: {mk: "Pepsi", en: "Pepsi"},
                 image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
                 price: "100"
             },
             {
-                title: {mk: "Fanta", en: "Fanta"},
+                title: {mk: "Pepsi ???", en: "Pepsi"},
+                image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
+                price: "100"
+            },
+            {
+                title: {mk: "Mirinda", en: "Mirinda"},
+                description:{mk:"лимон, танџарина",en:"lemon, tangerine"},
+                image:"img/nonAlcoholic/fizzy/mirinda.jpg",
+                price: "100"
+            },
+            {
+                title: {mk: "Lipton", en: "Lipton"},
+                description:{mk:"лимон, праска",en:"lemon, peach"},
+                image:"img/nonAlcoholic/fizzy/lipton.jpg",
                 price: "100"
             },
             {
                 title: {mk: "Schweppes ", en: "Schweppes"},
+                description:{mk:"bitter, tonic",en:"bitter, tonic"},
                 image:"img/nonAlcoholic/fizzy/schwepped-min.jpg",
                 price: "120"
             },
             {
-                title: {mk: "Sprite", en: "Sprite"},
-                image:"img/nonAlcoholic/fizzy/sprite-min.jpg",
-                price: "250"
+                title: {mk: "Red Bull", en: "Red bull"},
+                image:"img/nonAlcoholic/fizzy/redBull.jpg",
+                price: "220"
             },
-
-
         ]
     }
 
@@ -619,18 +640,18 @@ function showSubcategories(subcategories, parentCategory) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const subcategoryImages = {
-        cocktails: "img/coctail.jpg",
-        wines: "img/img_1.png",
-        beers: "img/img.png",
-        vodka:"img/vodka/vodka.jpg",
-        whiskey:"img/whiskey/whiskey.jpg",
-        vermouth:"img/vermouth/vermouth.jpg",
-        tequila:"img/tequila/tequila.jpg",
-        rum:"img/rum/rum.jpg",
-        liquor:"img/liquor/liquor.jpg",
-        gin:"img/gin/gin.jpg",
-        champagne:"img/champagne/champagne.jpg",
-        brandy:"img/brandy/brandy.jpg",
+        cocktails: "img/alcoholicDrinks/coctails/coctail.jpg",
+        wines: "img/alcoholicDrinks/wines/wine.png",
+        beers: "img/alcoholicDrinks/beers/beer.png",
+        vodka:"img/alcoholicDrinks/vodka/vodka.jpg",
+        whiskey:"img/alcoholicDrinks/whiskey/whiskey.jpg",
+        vermouth:"img/alcoholicDrinks/vermouth/vermouth.jpg",
+        tequila:"img/alcoholicDrinks/tequila/tequila.jpg",
+        rum:"img/alcoholicDrinks/rum/rum.jpg",
+        liquor:"img/alcoholicDrinks/liquor/liquor.jpg",
+        gin:"img/alcoholicDrinks/gin/gin.jpg",
+        champagne:"img/alcoholicDrinks/champagne/champagne.jpg",
+        brandy:"img/alcoholicDrinks/brandy/brandy.jpg",
         fizzyDrinks: "img/fz.jpg",
         softDrinks: "img/juices.jpg"
     };
