@@ -616,6 +616,7 @@ function showSubcategories(subcategories, parentCategory) {
 
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const subcategoryImages = {
         cocktails: "img/coctail.jpg",
@@ -673,6 +674,7 @@ function showProductsOfSubcategory(subcategory) {
 
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const items = products[sourceCategory][subcategory];
 
@@ -690,6 +692,7 @@ function showSimpleList(subcategory) {
 
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = ""; // чисти
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const items = products.alcoholic[subcategory];
 
@@ -711,6 +714,7 @@ function showSimpleList(subcategory) {
 function renderProducts(items) {
     const categoryView = document.getElementById("categoryView");
     categoryView.innerHTML = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     items.forEach(item => {
         const card = document.createElement("div");
