@@ -16,73 +16,73 @@ const products={
         {
             title:{mk:"Еспресо", en:"Espresso"},
             description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
-            image:"img/coffee/espresso.jpg",
+            image:"img/coffee/espressoNew.png",
             price:"80"
         },
         {
             title:{mk:"Еспресо Безкофеинско", en:"Espresso Decaf"},
             description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
-            image:"img/coffee/espresso.jpg",
+            image:"img/coffee/espressoNew.png",
             price:"80"
         },
         {
             title:{mk:"Мало Макијато", en:"Small Macchiato"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/smallMachiatto.jpg",
+            image:"img/coffee/espressoMachiatto.jpg",
             price:"70"
         },
         {
             title:{mk:"Макијато", en:"Macchiato"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/macchiato.jpg",
+            image:"img/coffee/machiattoNew.png",
             price:"100"
         },
         {
             title:{mk:"Макијато Безкофеинско", en:"Macchiato Decaf"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/macchiato.jpg",
+            image:"img/coffee/machiattoNew.png",
             price:"100"
         },
         {
             title:{mk:"Капучино", en:"Cappuccino"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/cappucino.jpg",
+            image:"img/coffee/cappucinoNew.png",
             price:"100"
         },
         {
             title:{mk:"Капучино Безкофеинско", en:"Cappuccino Decaf"},
             description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/cappucino.jpg",
+            image:"img/coffee/cappucinoNew.png",
             price:"100"
         },
         {
             title:{mk:"Лате", en:"Latte"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/latte.jpg",
+            image:"img/coffee/latteTry.jpg",
             price:"120"
         },
         {
             title:{mk:"Фредо Еспресо", en:"Fredo Espresso"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/fredoEspresso.jpg",
+            image:"img/coffee/freddoEspressoNew1.png",
             price:"100"
         },
         {
             title:{mk:"Фредо Капучино", en:"Fredo Cappuccino"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/fredoCappucino.jpg",
+            image:"img/coffee/freddoCappuccinoNew.jpg",
             price:"130"
         },
         {
             title:{mk:"Нескафе", en:"Nescafe"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/frappe.jpg",
+            image:"img/coffee/nescafe.png",
             price:"110"
         },
         {
             title:{mk:"Нескафе Шејк", en:"Nescafe Shake"},
             description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
-            image:"img/coffee/frappe.jpg",
+            image:"img/coffee/nescafe.png",
             price:"120"
         },
         {
@@ -250,6 +250,11 @@ const products={
                 title: { mk: "Туборг", en: "Tuborg" },
                 description: { mk: "0.33", en: "0.33" },
                 price: "190"
+            },
+            {
+                title: { mk: "Карлсберг", en: "Karlsberg" },
+                description: { mk: "0.33", en: "0.33" },
+                price: "210"
             },
             {
                 title: { mk: "Златен Даб", en: "Zlaten Dab" },
@@ -500,7 +505,7 @@ const products={
                 price: "100"
             },
             {
-                title: {mk: "Pepsi ???", en: "Pepsi"},
+                title: {mk: "Pepsi Mix", en: "Pepsi Mix"},
                 image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
                 price: "100"
             },
@@ -649,7 +654,7 @@ function showSubcategories(subcategories, parentCategory) {
         tequila:"img/alcoholicDrinks/tequila/tequila.jpg",
         rum:"img/alcoholicDrinks/rum/rum.jpg",
         liquor:"img/alcoholicDrinks/liquor/liquor.jpg",
-        gin:"img/alcoholicDrinks/gin/gin.jpg",
+        gin:"img/alcoholicDrinks/gin/ginNew.jpg",
         champagne:"img/alcoholicDrinks/champagne/champagne.jpg",
         brandy:"img/alcoholicDrinks/brandy/brandy.jpg",
         fizzyDrinks: "img/fz.jpg",
