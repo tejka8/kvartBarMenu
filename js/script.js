@@ -283,28 +283,16 @@ const products={
                 price: "220"
             },
             {
-                title: { mk: "Chivas", en: "Chivas" },
-                price: "300"
-            },
-            {
                 title: { mk: "Bushmills", en: "Bushmills" },
                 price: "180"
             },
             {
+                title: { mk: "Chivas", en: "Chivas" },
+                price: "300"
+            },
+            {
                 title: { mk: "Famous Grouse", en: "Famous Grouse" },
                 price: "180"
-            },
-            {
-                title: { mk: "Jim Beam", en: "Jim Beam" },
-                price: "200"
-            },
-            {
-                title: { mk: "Johnnie Walker Red", en: "Johnnie Walker Red" },
-                price: "200"
-            },
-            {
-                title: { mk: "Johnnie Walker Black", en: "Johnnie Walker Black" },
-                price: "300"
             },
             {
                 title: { mk: "Jack Daniels", en: "Jack Daniels" },
@@ -318,6 +306,18 @@ const products={
                 title: { mk: "Jameson", en: "Jameson" },
                 price: "220"
             },
+            {
+                title: { mk: "Jim Beam", en: "Jim Beam" },
+                price: "200"
+            },
+            {
+                title: { mk: "Johnnie Walker Black", en: "Johnnie Walker Black" },
+                price: "300"
+            },
+            {
+                title: { mk: "Johnnie Walker Red", en: "Johnnie Walker Red" },
+                price: "200"
+            },
         ],
         vodka: [
             {
@@ -325,27 +325,31 @@ const products={
                 price: "180"
             },
             {
-                title: { mk: "Smirnoff", en: "Smirnoff" },
-                price: "180"
-            },
-            {
                 title: { mk: "Finlandia", en: "Finlandia" },
                 price: "150"
+            },
+            {
+                title: { mk: "Fjodor", en: "Fjodor" },
+                price: "120"
             },
             {
                 title: { mk: "Gray Goose", en: "Gray Goose" },
                 price: "400"
             },
             {
-                title: { mk: "Fjodor", en: "Fjodor" },
-                price: "120"
+                title: { mk: "Smirnoff", en: "Smirnoff" },
+                price: "180"
             },
 
         ],
-        gin: [
+        gin:[
             {
                 title: { mk: "Bombay", en: "Bombay" },
                 price: "250"
+            },
+            {
+                title: { mk: "Fjodor", en: "Fjodor" },
+                price: "120"
             },
             {
                 title: { mk: "Gordons", en: "Gordons" },
@@ -358,13 +362,9 @@ const products={
             {
                 title: { mk: "Hendrick's", en: "Hendrick's" },
                 price: "350"
-            },
-            {
-                title: { mk: "Fjodor", en: "Fjodor" },
-                price: "120"
-            },
-
+            }
         ],
+
         vermouth: [
             {
                 title: { mk: "Martini Bianco", en: "Martini Bianco" },
@@ -385,6 +385,10 @@ const products={
                 price: "180"
             },
             {
+                title: { mk: "Captain Morgan", en:  "Captain Morgan" },
+                price: "200"
+            },
+            {
                 title: { mk: "Havana", en: "Havana" },
                 price: "200"
             },
@@ -392,40 +396,37 @@ const products={
                 title: { mk: "Old Pascas", en: "Old Pascas" },
                 price: "150"
             },
-            {
-                title: { mk: "Captain Morgan", en:  "Captain Morgan" },
-                price: "200"
-            },
+
         ],
         liquor: [
-            {
-                title: { mk: "Kahlua", en: "Kahlua" },
-                price: "200"
-            },
-            {
-                title: { mk: "Baileys ", en: "Baileys " },
-                price: "220"
-            },
             {
                 title: { mk: "Amareto", en: "Amareto" },
                 price: "***"
             },
             {
-                title: { mk: "Aperol", en:  "Aperol" },
+                title: { mk: "Aperol", en: "Aperol" },
                 price: "250"
             },
             {
-                title: { mk: "Campari", en:  "Campari" },
+                title: { mk: "Baileys", en: "Baileys" },
                 price: "220"
             },
             {
-                title: { mk: "Jegermeister", en:  "Jegermeister" },
+                title: { mk: "Campari", en: "Campari" },
+                price: "220"
+            },
+            {
+                title: { mk: "Jegermeister", en: "Jegermeister" },
                 price: "200"
             },
             {
-                title: { mk: "Pelinkovac", en:  "Pelinkovac" },
-                price: "180"
+                title: { mk: "Kahlua", en: "Kahlua" },
+                price: "200"
             },
+            {
+                title: { mk: "Pelinkovac", en: "Pelinkovac" },
+                price: "180"
+            }
         ],
         tequila: [
             {
