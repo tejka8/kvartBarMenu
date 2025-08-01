@@ -15,103 +15,86 @@ const products={
     coffee:[
         {
             title:{mk:"Еспресо", en:"Espresso"},
-            description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
             image:"img/coffee/espressoNew.png",
             price:"80"
         },
         {
             title:{mk:"Еспресо Безкофеинско", en:"Espresso Decaf"},
-            description:{mk:"Дозерка кафе/ Две дозерки кафе",en:"Shot of espresso/ Double shot of espresso"},
             image:"img/coffee/espressoNew.png",
             price:"80"
         },
         {
             title:{mk:"Мало Макијато", en:"Small Macchiato"},
-            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/espressoMachiatto.jpg",
+            image:"img/coffee/espMach.png",
             price:"70"
         },
         {
             title:{mk:"Макијато", en:"Macchiato"},
-            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/machiattoNew.png",
+            image:"img/coffee/machiatto.png",
             price:"100"
         },
         {
             title:{mk:"Макијато Безкофеинско", en:"Macchiato Decaf"},
-            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
-            image:"img/coffee/machiattoNew.png",
+            image:"img/coffee/machiatto.png",
             price:"100"
         },
         {
             title:{mk:"Капучино", en:"Cappuccino"},
-            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
             image:"img/coffee/cappucinoNew.png",
             price:"100"
         },
         {
             title:{mk:"Капучино Безкофеинско", en:"Cappuccino Decaf"},
-            description:{mk:"Дозерка еспресо со малку млеко",en:"Shot espresso with regular milk"},
             image:"img/coffee/cappucinoNew.png",
             price:"100"
         },
         {
             title:{mk:"Лате", en:"Latte"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/latteTry.jpg",
             price:"120"
         },
         {
             title:{mk:"Фредо Еспресо", en:"Fredo Espresso"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/freddoEspressoNew1.png",
             price:"100"
         },
         {
             title:{mk:"Фредо Капучино", en:"Fredo Cappuccino"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/freddoCappuccinoNew.jpg",
             price:"130"
         },
         {
             title:{mk:"Нескафе", en:"Nescafe"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/nescafe.png",
             price:"110"
         },
         {
             title:{mk:"Нескафе Шејк", en:"Nescafe Shake"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/nescafe.png",
             price:"120"
         },
         {
             title:{mk:"Топло Чоколадо", en:"Hot Chocolate"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/hotChocolate.jpg",
             price:"100"
         },
         {
             title:{mk:"Топло Чоколадо Плазма", en:"Hot Chocolate Plazma"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/hotChocolate.jpg",
             price:"120"
         },
         {
             title:{mk:"Салеп", en:"Salep"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/salep.jpg",
             price:"70"
         },
         {
             title:{mk:"Чај", en:"Tea"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/tea.jpg",
             price:"80"
         },
         {
             title:{mk:"Чај со Рум", en:"Rum Tea"},
-            description:{mk:"Дозерка еспресо со матено млеко",en:"Shot espresso with foamed milk"},
             image:"img/coffee/teaRum.jpg",
             price:"100/120"
         },
@@ -673,7 +656,9 @@ function showSubcategories(subcategories, parentCategory) {
             <div class="card-body d-flex justify-content-center align-items-center" style="height: 5rem;">
                 <h5 class="card-title fw-bold text-center">${titleText}</h5>
             </div>
-        `;
+        `
+
+
 
         card.onclick = () => {
             currentSubcategory = sub;
