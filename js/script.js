@@ -5,13 +5,14 @@ const dictionary={
         titleAlcoholic:"Алкохолни",
         titleNonAlcoholic:"Без алкохолни",
         titleProteins:"Протеини",
+        titleAppetizers:"Апетисани"
     },
     en:{
         titleCoffee:"Coffee",
         titleAlcoholic:"Alcoholic",
         titleNonAlcoholic:"Non Alcoholic",
         titleProteins:"Proteins",
-
+        titleAppetizers:"Appetizers"
     }
 }
 const products={
@@ -119,24 +120,24 @@ const products={
             {
                 title: { mk: "B52", en: "B52" },
                 description: { mk:"Ликер од кафе, Бејлис, Трипл сек", en: "Coffee liqueur, Baileys, Triple Sec" },
-                image: "img/alcoholicDrinks/coctails/B52.jpg",
+                image: "img/alcoholicDrinks/coctails/B52Shot.jpg",
                 price: "260"
             },
             {
                 title: { mk: "Bahama Mama", en: "Bahama Mama" },
-                description: { mk:"Рум, Гренадин, naliven sok, monin", en: "Rum, Grenadine, naliven sok, monin" },
+                description: { mk:"Рум, Гренадин, сок од ананас, монин од кокос", en: "Rum, Grenadine, pineapple juice, coconut monin" },
                 image: "img/alcoholicDrinks/coctails/bahamaMama.jpg",
                 price: "300"
             },
-            {
-                title: { mk: "Blue Frog", en: "Blue Frog" },
-                description: { mk: "Вотка, сино курaсо, лимонов сок, шеќерен сируп", en: "Vodka, blue curaçao, lemon juice, sugar syrup" },
-                image: "img/alcoholicDrinks/coctails/blueFrogNew.jpg",
-                price: "250"
-            },
+            // {
+            //     title: { mk: "Blue Frog", en: "Blue Frog" },
+            //     description: { mk: "Вотка, сино курaсо, лимонов сок, шеќерен сируп", en: "Vodka, blue curaçao, lemon juice, sugar syrup" },
+            //     image: "img/alcoholicDrinks/coctails/blueFrogNew.jpg",
+            //     price: "250"
+            // },
             {
                 title: { mk: "Bramble", en: "Bramble" },
-                description: { mk: "Џин, Лимон, Монин од боровинка", en: "Gin, lemon juice, blackberry monin" },
+                description: { mk: "Џин, лимон, Монин од боровинка", en: "Gin, lemon juice, blackberry monin" },
                 image: "img/alcoholicDrinks/coctails/brambleNew.jpg",
                 price: "250"
             },
@@ -148,13 +149,13 @@ const products={
             },
             {
                 title: { mk: "Cosmopolitan", en: "Cosmopolitan" },
-                description: { mk: "Вотка, сок од брусница, ликер", en: "Vodka, cranberry juice, liqueur" },
+                description: { mk: "Вотка, Ликер, сок од брусница ", en: "Vodka, cranberry juice, liqueur" },
                 image: "img/alcoholicDrinks/coctails/cosmopolitan-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Cuba Libre", en: "Cuba Libre" },
-                description: { mk: "Рум, лимон", en: "Rum, lemon" },
+                description: { mk: "Рум, лимон, кока кола", en: "Rum, lemon, coca cola" },
                 image: "img/alcoholicDrinks/coctails/cubaLibreNew.png",
                 price: "260"
             },
@@ -172,13 +173,13 @@ const products={
             },
             {
                 title: { mk: "Hugo Spritz", en: "Hugo Spritz" },
-                description: { mk:"Просеко, Монин", en: "Prosecco, Monin " },
+                description: { mk:"Просеко, сируп од бозел, газирана вода, нане", en: "Prosecco, elderflower syrup, sparkling water, mint " },
                 image: "img/alcoholicDrinks/coctails/hugoNew.png",
                 price: "260"
             },
             {
                 title: { mk: "Jungle Bird", en: "Jungle Bird" },
-                description: { mk:"Наливен сок, Кампари, Рум, Лимета", en: "Rum, Campari, Lime, Juice" },
+                description: { mk:"Кампари, Рум, сок од ананас, лимета, шеќер ", en: "Rum, Campari, Lime, pineapple juice, sugar" },
                 image: "img/alcoholicDrinks/coctails/jungleBirdNew.jpg",
                 price: "300"
             },
@@ -202,7 +203,7 @@ const products={
             },
             {
                 title: { mk: "Manhattan", en: "Manhattan" },
-                description: { mk: "Виски, слатко вермут, битери", en: "Whiskey, sweet vermouth, bitters" },
+                description: { mk: "Виски, Вемрут, битер", en: "Whiskey, Vermouth, bitters" },
                 image: "img/alcoholicDrinks/coctails/manhattan-min.jpg",
                 price: "250"
             },
@@ -214,7 +215,7 @@ const products={
             },
             {
                 title: { mk: "Martini", en: "Martini" },
-                description: { mk: "Џин и сув вермут, гарнирано со маслинка или кора од лимон", en: "Gin and dry vermouth, garnished with olive or lemon twist" },
+                description: { mk: "Џин, Вермут, маслинки", en: "Gin, Vermouth, olives" },
                 image: "img/alcoholicDrinks/coctails/martini-min.jpg",
                 price: "250"
             },
@@ -226,13 +227,13 @@ const products={
             },
             {
                 title: { mk: "Mojito", en: "Mojito" },
-                description: { mk: "Белен ром, шеќер, лимета, нане, сода вода", en: "White rum, sugar, lime, mint, soda water" },
+                description: { mk: "Бел рум, шеќер, лимета, нане, газирана вода", en: "White rum, sugar, lime, mint, sparkling water" },
                 image: "img/alcoholicDrinks/coctails/mojito-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Negroni", en: "Negroni" },
-                description: { mk: "Џин, Кампари, Вермут", en: "Gin, Campari, sweet vermouth" },
+                description: { mk: "Џин, Кампари, Вермут", en: "Gin, Campari, Sweet vermouth" },
                 image: "img/alcoholicDrinks/coctails/negroni-min.jpg",
                 price: "260"
             },
@@ -244,13 +245,13 @@ const products={
             },
             {
                 title: { mk: "Paloma", en: "Paloma" },
-                description: { mk: "Текила, Цок од цитрон, Лимета, Сол", en: "Tequila, grapefruit soda, lime juice, salt" },
+                description: { mk: "Текила, Сок од цитрон, Лимета, Сол", en: "Tequila, grapefruit soda, lime juice, salt" },
                 image: "img/alcoholicDrinks/coctails/paloma-min.jpg",
                 price: "250"
             },
             {
                 title: { mk: "Pornstar Martini", en: "Pornstar Martini" },
-                description: { mk: "Ванила вотка,Просеко, Монин од маракуја, Лимон", en: "Vanilla vodka, Prosecco, passion fruit monin, passion fruit puree, lemon " },
+                description: { mk: "Ванила вотка, Просеко, Монин од маракуја, Лимон", en: "Vanilla vodka, Prosecco, passion fruit monin, passion fruit puree, lemon " },
                 image: "img/alcoholicDrinks/coctails/pornstarM-min.jpg",
                 price: "300"
             },
@@ -305,6 +306,11 @@ const products={
                 price: "320"
             },
             {
+                title: { mk: "Т'га за југ", en: "T'ga za jug" },
+                description: { mk: "0.187", en: "0.187" },
+                price: "250"
+            },
+            {
                 title: { mk: "Темјаника", en: "Temjanika" },
                 description: { mk: "0.187", en: "0.187" },
                 price: "250"
@@ -313,6 +319,10 @@ const products={
                 title: { mk: "Траминец", en: "Traminec" },
                 description: { mk: "0.187", en: "0.187" },
                 price: "250"
+            },
+            {
+                title: { mk: "Греено вино", en: "Warm wine" },
+                price: "180"
             },
         ],
         beers: [
@@ -512,7 +522,7 @@ const products={
         champagne: [
             {
                 title: { mk: "Prosecco", en: "Prosecco" },
-                price: "***"
+                price: "1800"
             },
         ],
         brandy: [
@@ -523,6 +533,10 @@ const products={
             {
                 title: { mk: "Stock", en: "Stock" },
                 price: "180"
+            },
+            {
+                title: { mk: "Хенеси", en: "Hennessy" },
+                price: "300"
             },
         ]
     },
@@ -544,15 +558,15 @@ const products={
                 price: "150"
             },
             {
+                title: {mk: "Lipton", en: "Lipton"},
+                description:{mk:"лимон, зелен лимон, праска",en:"lemon, green lemon, peach"},
+                image:"img/nonAlcoholic/fizzy/lipton.jpg",
+                price: "100"
+            },
+            {
                 title: {mk: "Цедевита", en: "Cedevita"},
                 image: "img/nonAlcoholic/juices/cedevita.jpg",
                 price: "80"
-            },
-            {
-                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
-                description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
-                image: "img/nonAlcoholic/juices/sanpelegrino-min.jpg",
-                price: "160"
             },
             {
                 title: {mk: "Књаз Милош ", en: "Knjaz Milos"},
@@ -572,12 +586,12 @@ const products={
 
             {
                 title: {mk: "Pepsi", en: "Pepsi"},
-                image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
+                image:"img/nonAlcoholic/fizzy/pepsi.jpg",
                 price: "100"
             },
             {
                 title: {mk: "Pepsi Mix", en: "Pepsi Mix"},
-                image:"img/nonAlcoholic/fizzy/pepsi-min.jpg",
+                image:"img/nonAlcoholic/fizzy/pepsiMax.jpg",
                 price: "100"
             },
             {
@@ -586,17 +600,18 @@ const products={
                 image:"img/nonAlcoholic/fizzy/mirinda.jpg",
                 price: "100"
             },
-            {
-                title: {mk: "Lipton", en: "Lipton"},
-                description:{mk:"лимон, праска",en:"lemon, peach"},
-                image:"img/nonAlcoholic/fizzy/lipton.jpg",
-                price: "100"
-            },
+
             {
                 title: {mk: "Schweppes ", en: "Schweppes"},
-                description:{mk:"bitter, tonic",en:"bitter, tonic"},
+                description:{mk:"битер, тоник, танџарина",en:"bitter, tonic, tangerine"},
                 image:"img/nonAlcoholic/fizzy/schwepped-min.jpg",
                 price: "120"
+            },
+            {
+                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
+                description:{mk:"портокал, лимон, цитрон, калинка, праска, мандарина",en:"orange, lemon, grapefruit, pomegranate, peach, tangerine, "},
+                image: "img/nonAlcoholic/juices/sanpelegrino-min.jpg",
+                price: "160"
             },
             {
                 title: {mk: "Red Bull", en: "Red bull"},
@@ -608,18 +623,39 @@ const products={
     proteins:[
         {
             title: {mk:"Чоколадо", en:"Chocolate flavour"},
-            price:"150"
+            description:{mk:"вода, млеко",en:"water, milk"},
+            price:"160/180"
         },
         {
             title: {mk:"Ванила", en:"Vanilla flavour"},
+            description:{mk:"вода, млеко",en:"water, milk"},
+
             price:"150"
         },
         {
             title: {mk:"Јагода", en:"Strawberry flavour"},
+            description:{mk:"вода, млеко",en:"water, milk"},
+
             price:"150"
         },
         {
             title: {mk:"Лешник", en:"Hazelnut flavour"},
+            description:{mk:"вода, млеко",en:"water, milk"},
+
+            price:"150"
+        },
+    ],
+    appetizers:[
+        {
+            title: {mk:"Кикиритки", en:"Peanuts"},
+            price:"150"
+        },
+        {
+            title: {mk:"Маринирани кикиритки", en:"Marinated peanuts"},
+            price:"150"
+        },
+        {
+            title: {mk:"Индиски ореви", en:"Cashews"},
             price:"150"
         },
     ]
@@ -655,6 +691,7 @@ function changeLanguage(lang) {
     document.getElementById("titleAlcoholic").textContent = i18n("titleAlcoholic").toUpperCase();
     document.getElementById("titleNonAlcoholic").textContent = i18n("titleNonAlcoholic").toUpperCase();
     document.getElementById("titleProteins").textContent = i18n("titleProteins").toUpperCase();
+    document.getElementById("titleAppetizers").textContent = i18n("titleAppetizers").toUpperCase();
 
     if (currentView === "category" && currentCategory) {
         showCategory(currentCategory);
@@ -687,6 +724,11 @@ function showCategory(category) {
         showSimpleList("proteins");
         return;
     }
+    if (category === "appetizers") {
+        const items = products["appetizers"];
+        showSimpleList("appetizers");
+        return;
+    }
     const items = products[category];
     renderProducts(items);
 }
@@ -707,7 +749,8 @@ function getSubcategoryTitle(sub) {
             brandy: "Коњак",
             softDrinks: "Негазирани пијалоци",
             fizzyDrinks: "Газирани пијалоци",
-            proteins:"Протеини"
+            proteins:"Протеини",
+            appetizers: "Апетисани"
         },
         en: {
             cocktails: "Cocktails",
@@ -724,7 +767,8 @@ function getSubcategoryTitle(sub) {
             brandy:"brandy",
             softDrinks: "Soft Drinks",
             fizzyDrinks: "Fizzy Drinks",
-            proteins:"Proteins"
+            proteins:"Proteins",
+            appetizers: "Appetizers"
 
         }
     };
@@ -783,7 +827,7 @@ function showSubcategories(subcategories, parentCategory) {
 
 const noImageSubcategories = [
     "vodka", "whiskey", "gin", "tequila", "champagne",
-    "brandy", "liquor", "beers", "wines","rum","vermouth","proteins"
+    "brandy", "liquor", "beers", "wines","rum","vermouth","proteins","appetizers"
 ];
 
 function showProductsOfSubcategory(subcategory) {
@@ -821,6 +865,8 @@ function showSimpleList(subcategory) {
 
     if (subcategory === "proteins") {
         items = products.proteins;
+    } else if(subcategory==="appetizers"){
+        items=products.appetizers
     } else {
         items = products.alcoholic[subcategory];
     }
@@ -832,7 +878,7 @@ function showSimpleList(subcategory) {
         div.innerHTML = `
             <div class="wine-title">${item.title[language]}</div>
             ${item.description ? `<div class="wine-description">${item.description[language]}</div>` : ""}
-            <div class="wine-price">${item.price} ден.</div>
+            <div class="wine-price">${item.price}</div>
         `;
 
         categoryView.appendChild(div);
@@ -874,8 +920,7 @@ document.getElementById("backBtn").onclick = () => {
             currentCategory = "nonAlcoholic";
             subs = ["softDrinks", "fizzyDrinks"];
         }
-        else if (currentSubcategory === "proteins") {
-            // директно назад на главната страна
+        else if (currentSubcategory === "proteins" || currentSubcategory==="appetizers") {
             currentSubcategory = null;
             currentCategory = null;
             currentView = "main";
