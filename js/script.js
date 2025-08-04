@@ -129,12 +129,12 @@ const products={
                 image: "img/alcoholicDrinks/coctails/bahamaMama.jpg",
                 price: "300"
             },
-            // {
-            //     title: { mk: "Blue Frog", en: "Blue Frog" },
-            //     description: { mk: "Вотка, сино курaсо, лимонов сок, шеќерен сируп", en: "Vodka, blue curaçao, lemon juice, sugar syrup" },
-            //     image: "img/alcoholicDrinks/coctails/blueFrogNew.jpg",
-            //     price: "250"
-            // },
+            {
+                title: { mk: "Blue Frog", en: "Blue Frog" },
+                description: { mk: "Вотка, Рум, Џин, Текила, Трипл сек, Ликер, Ред Бул, портокал", en: "Vodka, Rum, Gin, Tequila, Triple sec, Liquor, Red Bull, orange" },
+                image: "img/alcoholicDrinks/coctails/blueFrogNew.jpg",
+                price: "250"
+            },
             {
                 title: { mk: "Bramble", en: "Bramble" },
                 description: { mk: "Џин, лимон, Монин од боровинка", en: "Gin, lemon juice, blackberry monin" },
@@ -569,13 +569,38 @@ const products={
                 price: "80"
             },
             {
-                title: {mk: "Књаз Милош ", en: "Knjaz Milos"},
+                title: {mk: "Сок од портокал", en: "Orange juice"},
+                image: "img/nonAlcoholic/juices/orangeJuiceBravo.png",
+                price: "80"
+            },
+            {
+                title: {mk: "Сок од праска", en: "Peach juice"},
+                image: "img/nonAlcoholic/juices/peachJuice.jpg",
+                price: "80"
+            },
+            {
+                title: {mk: "Сок од јаболко", en: "Apple juice"},
+                image: "img/nonAlcoholic/juices/appleJuice.jpg",
+                price: "80"
+            },
+            {
+                title: {mk: "Сок од вишна", en: "Sour cherry juice"},
+                image: "img/nonAlcoholic/juices/sourCherryJuice.jpg",
+                price: "80"
+            },
+            {
+                title: {mk: "Сок од јагода", en: "Strawberry juice"},
+                image: "img/nonAlcoholic/juices/strawberryJuice.png",
+                price: "80"
+            },
+            {
+                title: {mk: "Књаз Милош", en: "Knjaz Milos"},
                 description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
                 image: "img/nonAlcoholic/juices/KM.jpg",
                 price: "80"
             },
            {
-                title: {mk: "Аквавива ", en: "Aquaviva"},
+                title: {mk: "Аквавива", en: "Aquaviva"},
                 description:{mk:"лимон, грозје, калинка, портокал",en:"lemon, grapes, orange, pomegranate"},
                 image: "img/nonAlcoholic/juices/voda.jpg",
                 price: "80"
@@ -602,16 +627,26 @@ const products={
             },
 
             {
-                title: {mk: "Schweppes ", en: "Schweppes"},
+                title: {mk: "Schweppes", en: "Schweppes"},
                 description:{mk:"битер, тоник, танџарина",en:"bitter, tonic, tangerine"},
                 image:"img/nonAlcoholic/fizzy/schwepped-min.jpg",
                 price: "120"
             },
             {
-                title: {mk: "Sanpelegrino ", en: "Sanpelegrino"},
+                title: {mk: "Sanpelegrino", en: "Sanpelegrino"},
                 description:{mk:"портокал, лимон, цитрон, калинка, праска, мандарина",en:"orange, lemon, grapefruit, pomegranate, peach, tangerine, "},
                 image: "img/nonAlcoholic/juices/sanpelegrino-min.jpg",
                 price: "160"
+            },
+            {
+                title: {mk: "Газиран сок од портокал", en: "Soda orange juice"},
+                image: "img/nonAlcoholic/fizzy/oranginaJuice.jpg",
+                price: "80"
+            },
+            {
+                title: {mk: "Газиран сок од црвен портокал ", en: "Soda red orange juice"},
+                image: "img/nonAlcoholic/fizzy/oranginaRed.jpg",
+                price: "80"
             },
             {
                 title: {mk: "Red Bull", en: "Red bull"},
@@ -661,17 +696,15 @@ const products={
     ]
 
 }
-let currentCategory = null;      // Пр. "coffee", "alcoholic"
-let currentSubcategory = null;   // Пр. "cocktails", "wines", "beers"
-let currentView = "main";// "main", "category", "subcategory"
+let currentCategory = null;
+let currentSubcategory = null;
+let currentView = "main";
 
 let language = localStorage.getItem("language") || "mk";
 
 function i18n(key) {
     return dictionary[language][key];
 }
-
-
 function showMain() {
     currentCategory = null;
     currentSubcategory = null;
